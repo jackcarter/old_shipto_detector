@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 340px;
+  background:
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.3), transparent 32%),
+    linear-gradient(180deg, #10213b 0%, #0c1728 100%);
+  color: #f8fafc;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.popup-shell {
+  padding: 18px;
+}
+
+.hero {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(160deg, #fb923c 0%, #ef4444 100%);
+  color: #111827;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fdba74;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.status-card,
+.toggle-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 14px 15px;
+  backdrop-filter: blur(6px);
+}
+
+.status-card {
+  margin-bottom: 14px;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.status-label {
+  color: #cbd5e1;
+}
+
+.toggle-row {
+  margin-bottom: 14px;
+}
+
+.toggle-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.toggle-card strong,
+.toggle-card small {
+  display: block;
+}
+
+.toggle-card small {
+  margin-top: 3px;
+  color: #cbd5e1;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  appearance: none;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 12px 13px;
+}
+
+.primary-button {
+  background: linear-gradient(160deg, #fb923c 0%, #f97316 100%);
+  color: #111827;
+}
+
+.secondary-button {
+  background: rgba(255, 255, 255, 0.12);
+  color: #f8fafc;
+}
+
+.message {
+  min-height: 18px;
+  margin: 12px 0 0;
+  color: #fdba74;
+  font-size: 12px;
+}

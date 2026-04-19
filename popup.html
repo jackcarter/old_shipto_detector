@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Old Address Detector</title>
+    <link rel="stylesheet" href="styles/popup.css">
+  </head>
+  <body>
+    <main class="popup-shell">
+      <section class="hero">
+        <div class="hero-mark">!</div>
+        <div>
+          <p class="eyebrow">Old Address Detector</p>
+          <h1>Shipping address watchlist</h1>
+        </div>
+      </section>
+
+      <section class="status-card">
+        <div class="status-row">
+          <span class="status-label">Current site</span>
+          <strong id="current-domain">Loading…</strong>
+        </div>
+        <div class="status-row">
+          <span class="status-label">Watchlisted addresses</span>
+          <strong id="watch-count">0</strong>
+        </div>
+        <div class="status-row">
+          <span class="status-label">Last page scan</span>
+          <strong id="match-status">Checking…</strong>
+        </div>
+      </section>
+
+      <section class="toggle-row">
+        <label class="toggle-card">
+          <span>
+            <strong>Extension enabled</strong>
+            <small>Stop scans everywhere until you turn it back on.</small>
+          </span>
+          <input id="enabled-toggle" type="checkbox">
+        </label>
+      </section>
+
+      <section class="button-grid">
+        <button id="ignore-site-button" class="secondary-button" type="button">Ignore this site</button>
+        <button id="options-button" class="primary-button" type="button">Manage addresses</button>
+      </section>
+
+      <p id="message" class="message" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

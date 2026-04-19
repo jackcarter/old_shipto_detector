@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Old Address Detector Settings</title>
+    <link rel="stylesheet" href="styles/options.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="intro-card">
+        <div class="intro-mark">!</div>
+        <div>
+          <p class="eyebrow">Old Address Detector</p>
+          <h1>Shipping address watchlist</h1>
+          <p class="lede">
+            Add any address strings you want flagged before checkout.
+            The extension scans checkout and order forms for these strings and warns you when it finds a match.
+          </p>
+        </div>
+      </section>
+
+      <section class="layout">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2>Watched address strings</h2>
+              <p>Add one address string per line. The extension warns when any line appears on a page.</p>
+            </div>
+            <label class="toggle">
+              <span>Enabled</span>
+              <input id="enabled-toggle" type="checkbox">
+            </label>
+          </div>
+
+          <form id="address-form" class="address-form">
+            <label>
+              <textarea
+                id="addresses-input"
+                rows="12"
+                placeholder="123 Main St&#10;123 Main Street&#10;456 Elm Ave&#10;Apt 9B"
+              ></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="primary-button" type="submit">Save list</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel side-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Ignored sites</h2>
+              <p>Domains where warnings are suppressed. Large webmail services are ignored by default.</p>
+            </div>
+          </div>
+          <div id="ignored-sites-list" class="pill-list"></div>
+        </div>
+      </section>
+
+      <section class="footer-row">
+        <p id="save-message" class="save-message" aria-live="polite"></p>
+        <button id="export-button" class="secondary-button" type="button">Export settings</button>
+      </section>
+    </main>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
